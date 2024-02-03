@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Noto+Sans:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+    text-transform: capitalize;
+    transition: all 1s ease-out;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.background{
+    height: 70vh;
+    width:100%;
+    background-image: linear-gradient(rgba(2 10 10/57%), rgba(2 10 10/20%)), url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo{
+    width:70px;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items li{
+    flex: 1;
+    list-style-type: none;
+    margin-left: 12%;
+}
+
+.nav-items li a{
+       color: white;
+       font-size: 20px;
+       text-decoration: none;
+}
+
+.nav-items li::before{
+    content: '';
+    width: 0;
+    background-color:black;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+    height: 2px;
+}
+
+.nav-items li a:hover{
+    color:black ;
+}
+
+.nav-items li:hover::before{
+    width: 60%;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color:rgb(5, 87, 134);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    background-color:gray ;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    top:6px;
+    right:5%;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
